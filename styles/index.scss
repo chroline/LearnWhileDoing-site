@@ -94,7 +94,7 @@
       :global(.buttons) {
         display : flex;
 
-        button:first-child {
+        a:first-child {
           margin-right : 1rem;
         }
       }

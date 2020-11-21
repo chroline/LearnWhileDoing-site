@@ -1,10 +1,17 @@
+import {AppProps} from "next/app"
+import Head from "next/head";
+
+import React, {Component} from "react"
 import "../styles/_reset.css"
 import "../styles/global.scss"
 
-import React, {Component} from "react"
-import {AppProps} from "next/app"
-
 const App = ({Component, pageProps}: AppProps) =>
-  <Component {...pageProps} />
+  <>
+    <Head>
+      <title>Learn While Doing</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    </Head>
+    <Component {...pageProps} />
+  </>
 
 export default App

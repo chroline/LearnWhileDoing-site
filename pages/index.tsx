@@ -27,6 +27,7 @@ export default function Home() {
               VIEW COURSES
             </Button>
             <Button
+              muted
               href={"https://www.notion.so/a02b58a311374f8c85df1de4525a8ded?v=7edcd3c1dca6474ab9d68e534221da70"}
             >
               LEARN MORE
