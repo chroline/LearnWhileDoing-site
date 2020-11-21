@@ -19,13 +19,13 @@
     "jsx": "preserve",
     "typeRoots": [
       "node_modules/@types",
-      "./typings"
+      "next-env.d.ts"
     ]
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "*",
+    "**/*"
   ],
   "exclude": [
     "node_modules"

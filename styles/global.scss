@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "styles/_vars.scss";
+
+html, body, :global(#__next) {
+  height : 100%;
+  margin : 0;
+  width  : 100%;
+}
+
+* {
+  box-sizing  : border-box;
+  font-family : $font-family-sans-serif;
+
+  &:active {
+    -webkit-tap-highlight-color : transparent
+  }
+}
+

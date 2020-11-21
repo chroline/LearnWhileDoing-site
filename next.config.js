@@ -1,6 +1,5 @@
 const withCSS = require('@zeit/next-css')
-const withStylus = require('@zeit/next-stylus')
+const withSass = require('@zeit/next-sass')
+const withImages = require('next-images')
 
-module.exports = withCSS(withStylus({
-  cssModules: true
-}))
+module.exports = withImages(withCSS(withSass()))

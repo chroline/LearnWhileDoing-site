@@ -1,0 +1,120 @@
+@import "styles/_vars.scss";
+
+.hero {
+  align-items     : center;
+  background      : linear-gradient(180deg, rgba($color, 0.22) 0%, rgba($color, 0) 100%), #FFFFFF;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  padding         : 1rem 0 2rem 0;
+  position        : relative;
+
+  .heading {
+    display  : inline-block;
+    position : relative;
+
+    p.back {
+      color       : rgba($color, .1);
+      font-family : $font-family-sans-serif;
+      font-size   : 7em;
+      font-style  : normal;
+      font-weight : 800;
+    }
+
+    p.front {
+      color       : $color;
+      font-family : $font-family-sans-serif;
+      font-size   : 2em;
+      font-style  : normal;
+      font-weight : bold;
+      left        : 50%;
+      position    : absolute;
+      text-align  : center;
+      transform   : translate(-50%, -50%);
+      top         : 50%;
+      width       : 200%;
+    }
+  }
+
+  .content {
+    display  : flex;
+    position : relative;
+    width    : 68rem;
+    z-index  : 1;
+
+    > * {
+      margin : 0 3rem;
+
+      &:first-child {
+        margin-left : 0;
+      }
+
+      &:last-child {
+        margin-right : 0;
+      }
+    }
+
+    .info {
+      display         : flex;
+      flex            : 1;
+      flex-direction  : column;
+      justify-content : center;
+
+      > * {
+        line-height : 1.2;
+        margin      : 1rem 0;
+
+        &:first-child {
+          margin-top : 0;
+        }
+
+        &:last-child {
+          margin-bottom : 0;
+        }
+      }
+
+      h1 {
+        font-family : $font-family-sans-serif;
+        font-size   : 3em;
+        font-style  : normal;
+        font-weight : 600;
+        word-break  : break-word;
+      }
+
+      p {
+        font-family : $font-family-sans-serif;
+        font-size   : 1.75em;
+        font-weight : 300;
+
+        b {
+          font-weight : 500;
+        }
+      }
+
+      :global(.buttons) {
+        display : flex;
+
+        button:first-child {
+          margin-right : 1rem;
+        }
+      }
+    }
+
+    :global(.illustration) {
+      display         : flex;
+      justify-content : center;
+
+      :global(img) {
+        height : 28rem
+      }
+    }
+  }
+
+  :global(.texture) {
+    bottom   : 0;
+    left     : 0;
+    position : absolute;
+    z-index  : 0;
+  }
+}
+

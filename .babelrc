@@ -6,10 +6,14 @@
         "styled-jsx": {
           "plugins": [
             "styled-jsx-plugin-postcss",
-            "styled-jsx-plugin-stylus"
+            "styled-jsx-plugin-sass"
           ]
         }
       }
     ]
+  ],
+  "plugins": [
+    "inline-react-svg",
+    "@babel/syntax-dynamic-import"
   ]
 }

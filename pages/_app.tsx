@@ -1,5 +1,5 @@
-import '../styles/_reset.css'
-import '../styles/global.styl'
+import "../styles/_reset.css"
+import "../styles/global.scss"
 
 import React, {Component} from "react"
 import {AppProps} from "next/app"
